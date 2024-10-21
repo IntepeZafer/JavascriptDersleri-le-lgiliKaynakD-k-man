@@ -1,0 +1,11 @@
+let isimler = ['Can' , 'Rıdvan' , 'Elif'];
+let yaslar = [1 , 2 , 3 , 4 , 5 , 1.12];
+let karisikArrays = ["Hello", 1 , 2 , 3 , 23.12];
+console.log(isimler[0]);
+console.log(yaslar);
+console.log(karisikArrays);
+console.log(yaslar.join('-'));
+console.log(yaslar.indexOf(1));
+console.log(yaslar.concat(1.13));
+console.log(yaslar.push(1.14));
+console.log(yaslar.pop());
