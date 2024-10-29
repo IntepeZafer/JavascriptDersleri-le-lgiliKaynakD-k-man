@@ -1,0 +1,13 @@
+.error{
+    padding: 1rem;
+    color: red;
+    border: 1px solid black;
+    border-radius: 1rem;
+    background-color: rgb(26, 166, 231);
+}
+.success{
+    background-color: rgb(43, 255, 0);
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    border: 5px dotted black;
+}
