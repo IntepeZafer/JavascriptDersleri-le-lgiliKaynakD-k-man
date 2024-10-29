@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+.container .formContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .formContainer #myForm{
+    width: 50%;
+    height: 8%;
+    display: flex;
+}
+.container .formContainer #myForm .textContent{
+    width: 80%;
+    height: 100%;
+}
+.container .formContainer #myForm .submitContent{
+    width: 20%;
+    height: 100%;
+}
+.container .formContainer #myForm .textContent input{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    outline: none;
+    border: 1px solid black;
+    border-right-style: none;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+.container .formContainer #myForm .submitContent input{
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    outline: none;
+    border: 1px solid black;
+    border-left-style: none;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
