@@ -1,4 +1,4 @@
-const getTodos = (callback) => {
+const getTodos = (resource,callback) => {
     const request = new XMLHttpRequest();
     request.addEventListener("readystatechange" , () => {
         if(request.readyState === 4 && request.status === 200){
@@ -8,10 +8,10 @@ const getTodos = (callback) => {
             callback('Bir Hata Olustu' , undefined);
         }
     });
-    request.open("GET" , "https://jsonplaceholder.typicode.com/todos");
+    request.open("GET" , resource);
     request.send();
 };
-getTodos((error , data) => {
+getTodos('./example/can.json',(error , data) => {
     try{
         if(error){
             console.log(error);
@@ -21,4 +21,26 @@ getTodos((error , data) => {
     }catch(e){
         console.log(e);
     }
+    getTodos('./example/osman.json',(error , data) => {
+        try{
+            if(error){
+                console.log(error);
+            }else{
+                console.log(data);
+            }
+        }catch(e){
+            console.log(e);
+        }
+    });
+    getTodos('./example/tuba.json',(error , data) => {
+        try{
+            if(error){
+                console.log(error);
+            }else{
+                console.log(data);
+            }
+        }catch(e){
+            console.log(e);
+        }
+    });
 });
