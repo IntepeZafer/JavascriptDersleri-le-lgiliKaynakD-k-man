@@ -13,18 +13,12 @@ class User{
     }
 }
 
-class Admin extends User{
+class addUser extends User{
     constructor(firstName , lastName , age , email , title){
         super(firstName , lastName , age , email);
         this.title = title;
     }
-    deleteUser(user){
-        users = users.filter(u => u.email !== user.email);
-    }
 }
 
 const user = new User("Eric" , "Cartman" , 20 , "eric.cartman@gmail");
-const admin = new Admin("Mark" , "Cartman" , 21 , "mark.cartman@gmail" , "Admin");
-let users = [user , admin];
-console.log(admin);
-console.log(users)
+console.log(user);
